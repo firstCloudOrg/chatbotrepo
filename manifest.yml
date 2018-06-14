@@ -1,0 +1,5 @@
+---
+applications:
+ - name: app
+   host: https://first-app.eu-gb.mybluemix.net/
+   memory: 128M
