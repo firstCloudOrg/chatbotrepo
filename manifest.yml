@@ -1,5 +1,5 @@
 ---
 applications:
  - name: app
-   host: first-app
+   host: first-app1
    memory: 128M
