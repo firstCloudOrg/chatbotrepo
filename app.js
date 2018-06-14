@@ -23,7 +23,7 @@ var server = http.createServer(function(req,res){
     };
 
     //res.end(JSON.stringify(newObj));
-    res.end(readHTML.readStream());
+    readHTML.readStream(res);
 });
 
 server.listen(3000,'127.0.0.1');

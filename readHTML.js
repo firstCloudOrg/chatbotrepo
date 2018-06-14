@@ -1,16 +1,14 @@
 var fs = require('fs');
 
-var readStream = function(){
+var readStream = function(res){
 var readStream = fs.createReadStream(__dirname+"/chat.html","utf8");
-var str ="";
-readStream.on("data", function(chunk){
-    str = str + chunk;
-    //console.log(str);
-});
+var str = "";
+readStream.pipe(res);
 
-//console.log(str);
 return str;
+
 };
 
-readStream();
+console.log(readStream());
+
 module.exports.readStream = readStream;
