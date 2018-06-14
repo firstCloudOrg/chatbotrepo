@@ -1,5 +1,5 @@
 ---
 applications:
  - name: app
-   host: first-app.eu-gb.mybluemix.net
+   host: first-app
    memory: 128M
